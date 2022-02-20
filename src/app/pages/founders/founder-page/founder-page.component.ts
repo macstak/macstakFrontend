@@ -5,6 +5,7 @@ import {
   faInstagram,
   faTwitter,
   faLinkedin,
+  faGithub,
 } from '@fortawesome/free-brands-svg-icons';
 @Component({
   selector: 'app-founder-page',
@@ -16,6 +17,7 @@ export class FounderPageComponent implements OnInit {
   faInstagram = faInstagram;
   faTwitter = faTwitter;
   faLinkedin = faLinkedin;
+  faGithub = faGithub;
 
   constructor() {}
 
