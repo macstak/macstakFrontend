@@ -6,14 +6,17 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { Shared1Module } from './shared1/shared1.module';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, PageNotFoundComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FontAwesomeModule,
+    Shared1Module,
   ],
   providers: [],
   bootstrap: [AppComponent],
