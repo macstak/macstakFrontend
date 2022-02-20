@@ -1,27 +1,78 @@
-<div style="height: 80%;" class="container">
-    <div style="height: inherit;" class="row">
-        <div class="col-12">
+<div style="    background: #695681;">
+    <!-- about -->
+    <div class="about">
+        <a class="bg_links social portfolio" href="https://www.rafaelalucas.com" target="_blank">
+            <span class="icon"></span>
+        </a>
+        <a class="bg_links social dribbble" href="https://dribbble.com/rafaelalucas" target="_blank">
+            <span class="icon"></span>
+        </a>
+        <a class="bg_links social linkedin" href="https://www.linkedin.com/in/rafaelalucas/" target="_blank">
+            <span class="icon"></span>
+        </a>
+        <a class="bg_links logo"></a>
+    </div>
+    <!-- end about -->
 
-            <div style="    flex-direction: column;
-            align-items: center;
-            height: 100%;    text-align: center;
-            justify-content: center;" class="row">
-                <h1 style="    color: #0a0907;
-                text-shadow: 3px 3px 8px #2a17c5;
-                font-weight: bold;"> Welcome To MacStak !!!</h1>
+    <!-- <nav>
+        <div class="menu">
+            <p class="website_name">LOGO</p>
+            <div class="menu_links">
+                <a href="" class="link">about</a>
+                <a href="" class="link">projects</a>
+                <a href="" class="link">contacts</a>
+            </div>
+            <div class="menu_icon">
+                <span class="icon"></span>
+            </div>
+        </div>
+    </nav> -->
 
-                <h2 style="     color: #009688;
-                text-shadow: 3px 3px 8px #2196f3;
-                font-weight: bold;">
+    <section class="wrapper">
 
-                    The page you are looking not Found
+        <div class="container">
 
-                </h2>
+            <div id="scene" class="scene" data-hover-only="false">
 
 
+                <div class="circle" data-depth="1.2"></div>
+
+                <div class="one" data-depth="0.9">
+                    <div class="content">
+                        <span class="piece"></span>
+                        <span class="piece"></span>
+                        <span class="piece"></span>
+                    </div>
+                </div>
+
+                <div class="two" data-depth="0.60">
+                    <div class="content">
+                        <span class="piece"></span>
+                        <span class="piece"></span>
+                        <span class="piece"></span>
+                    </div>
+                </div>
+
+                <div class="three" data-depth="0.40">
+                    <div class="content">
+                        <span class="piece"></span>
+                        <span class="piece"></span>
+                        <span class="piece"></span>
+                    </div>
+                </div>
+
+                <p class="p404" data-depth="0.50">404</p>
+                <p class="p404" data-depth="0.10">404</p>
 
             </div>
 
+            <div class="text">
+                <article>
+                    <p>Uh oh! Looks like you got lost. <br>Go back to the homepage if you dare!</p>
+                    <button (click)="gotToHomePage()"> i dare!</button>
+                </article>
+            </div>
+
         </div>
-    </div>
+    </section>
 </div>
