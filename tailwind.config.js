@@ -1,6 +1,6 @@
 module.exports = {
   content: ["./src/**/*.html" /* ... */],
-  prefix: "",
+  prefix: "tw-",
   // darkMode: "class",
   // or 'media' or 'class'
   theme: {
