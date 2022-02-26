@@ -15,6 +15,14 @@ const routes: Routes = [
   },
 
   {
+    path: 'certificate',
+    loadChildren: () =>
+      import('./pages/certificate/certificate.module').then(
+        (m) => m.CertificateModule
+      ),
+  },
+
+  {
     path: '**',
     loadChildren: () =>
       import('./pages/error/error.module').then((m) => m.ErrorModule),
