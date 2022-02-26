@@ -18,8 +18,12 @@
     </header>
     <main>
 
-        <label for="name">Type Your Name</label>
-        <input required type="text" name="Name" placeholder="Name..." id="name" minlength="3" maxlength="16">
+
+
+        <label for="exampleFormControlInput1" class="form-label">Your Name !</label>
+        <input [(ngModel)]="studentName" style="    max-width: 15rem;
+        text-align: center;" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Mr. Man">
+
         <Button (click)="generatePDF('test')" id="submitBtn">Get Certificate</Button>
 
 

@@ -30,15 +30,6 @@ main * {
   margin-bottom: 12px;
 }
 
-input {
-  text-align: center;
-  font-size: large;
-  outline: none;
-  border: none;
-  border-bottom: 1px solid black;
-  text-transform: capitalize;
-}
-
 /* for styling the autocomplete style */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -66,12 +57,6 @@ a {
 @media (prefers-color-scheme: dark) {
   body {
     background: black;
-    color: #fff;
-  }
-  input,
-  input:active {
-    background: black;
-    border-color: #fff;
     color: #fff;
   }
 

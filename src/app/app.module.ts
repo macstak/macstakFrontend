@@ -10,6 +10,7 @@ import { Shared1Module } from './shared1/shared1.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { CertificatePageComponent } from './pages/certificate/certificate-page/certificate-page.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent, CertificatePageComponent],
@@ -17,6 +18,7 @@ import { CertificatePageComponent } from './pages/certificate/certificate-page/c
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
     FontAwesomeModule,
     Shared1Module,
     ServiceWorkerModule.register('ngsw-worker.js', {

@@ -13,9 +13,16 @@ import fontkit from '@pdf-lib/fontkit';
 export class CertificatePageComponent implements OnInit {
   constructor() {}
 
+  studentName: any;
+
   ngOnInit(): void {}
 
   generatePDF = async (name: any) => {
+    if (!this.studentName) {
+      alert('Please Give your Name');
+      return;
+    }
+
     const existingPdfBytes = await fetch(
       'https://mr-man7352.github.io/loginPage/cert.pdf'
     ).then((res) => res.arrayBuffer());
@@ -37,9 +44,9 @@ export class CertificatePageComponent implements OnInit {
     const firstPage = pages[0];
 
     // Draw a string of text diagonally across the first page
-    firstPage.drawText(name, {
-      x: 300,
-      y: 270,
+    firstPage.drawText(this.studentName, {
+      x: 280,
+      y: 330,
       size: 58,
       font: SanChezFont,
       color: rgb(0.2, 0.84, 0.67),
