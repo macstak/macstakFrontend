@@ -3,9 +3,34 @@
 </app-navbar>
 
 
-<p>certificate-page works!</p>
+<!-- start -->
+
+<section>
+
+    <header style="
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    ">
+        <img src="../../../../assets/img/logo/mac.png" alt="Padhega India Logo">
+        <h1> <a href="https://macstak.in" target="_blank" rel="noopener noreferrer">Verify You Certificate!!</a></h1>
+    </header>
+    <main>
+
+        <label for="name">Type Your Name</label>
+        <input required type="text" name="Name" placeholder="Name..." id="name" minlength="3" maxlength="16">
+        <Button (click)="generatePDF('test')" id="submitBtn">Get Certificate</Button>
 
 
+    </main>
+
+</section>
+
+
+
+
+<!-- end -->
 <app-footer>
 
 </app-footer>
