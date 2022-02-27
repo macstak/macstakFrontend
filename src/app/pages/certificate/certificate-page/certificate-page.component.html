@@ -20,11 +20,12 @@
 
 
 
-        <label for="exampleFormControlInput1" class="form-label">Your Name !</label>
-        <input [(ngModel)]="studentName" style="    max-width: 15rem;
-        text-align: center;" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Mr. Man">
+        <label for="exampleFormControlInput1" class="form-label">Your Key !</label>
+        <input [(ngModel)]="verificationCode" style="    max-width: 15rem;
+        text-align: center;" type="text" class="form-control" id="exampleFormControlInput1"
+            placeholder="verification key ...">
 
-        <Button (click)="generatePDF('test')" id="submitBtn">Get Certificate</Button>
+        <Button (click)="verifyCode()" id="submitBtn">Get Certificate</Button>
 
 
     </main>

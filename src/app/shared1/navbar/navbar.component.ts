@@ -37,7 +37,7 @@ export class NavbarComponent implements OnInit {
       this.isMobileShow = true;
       this.isDesktopShow = false;
     } else {
-      console.log('hi');
+      // console.log('hi');
 
       this.isMobileShow = false;
       this.isDesktopShow = true;
